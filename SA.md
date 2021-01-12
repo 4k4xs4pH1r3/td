@@ -48,14 +48,19 @@ Install R7 Suite: neXpose+Metasploit Pro+Nmap+604 NSE scripts: Vuln+Vulners+Vuls
     sudo apt-get autoclean && sudo apt install -f && sudo apt install neofetch -y && sudo apt -f install && sudo apt autoremove -y && apt-get clean cache && sudo apt update && sudo apt-get autoclean && apt-get clean cache && sudo apt update && sudo apt update -y && sudo apt full-upgrade -y --allow-downgrades && sudo dpkg --configure -a && sudo grub-mkconfig && cd && neofetch
 # 
 #
-## Install Nvidia Drivers
+## Install Nvidia Video Drivers
 
     apt-get install debian-archive-keyring && sudo add-apt-repository ppa:oibaf/graphics-drivers && sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 957D2708A03A4626 && wget --no-check-certificate https://download.01.org/gfx/RPM-GPG-KEY-ilg -O - | sudo apt-key add - && wget --no-check-certificate https://download.01.org/gfx/RPM-GPG-KEY-ilg-2 -O - | sudo apt-key add - && GET https://download.01.org/gfx/RPM-GPG-KEY-ilg-2 | gpg --import && sudo apt update -y && sudo apt dist-upgrade -y
 
+or
+    
+## Install Nvidia (R) Video Cuda Drivers | https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html
+
+#
 ## Install Intel i915 Drivers
 
 https://unix.stackexchange.com/questions/556946/possible-missing-firmware-lib-firmware-i915-for-module-i915
-
+#
 ## Install Intel Drivers
 
 https://askubuntu.com/questions/501372/intel-graphis-card-not-updating-problem-with-ppa
