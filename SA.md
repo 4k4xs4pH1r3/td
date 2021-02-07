@@ -45,7 +45,7 @@ Install R7 Suite: neXpose+Metasploit Pro+Nmap+604 NSE scripts: Vuln+Vulners+Vuls
     sudo pip install --no-cache-dir -U crcmod
 #    
 #       
-    sudo apt-get autoclean && sudo apt install -f && sudo apt install aptitude -y && sudo apt install neofetch -y && sudo apt -f install && sudo apt autoremove -y && apt-get clean cache && sudo apt update && sudo apt-get autoclean && apt-get clean cache && sudo apt update && sudo apt update -y && sudo apt full-upgrade -y --allow-downgrades && sudo dpkg --configure -a && sudo grub-mkconfig && cd && aptitude upgrade--full-resolver -y && neofetch
+    sudo apt-get autoclean && sudo apt install -f && sudo apt install aptitude -y && sudo apt install neofetch -y && sudo apt -f install && sudo apt autoremove -y && apt-get clean cache && sudo apt update && sudo apt-get autoclean && apt-get clean cache && sudo apt update && sudo apt update -y && sudo apt full-upgrade -y --allow-downgrades && sudo dpkg --configure -a && sudo grub-mkconfig && cd && aptitude upgrade --full-resolver -y && neofetch
 # 
 #
 ## Install Nvidia Video Drivers
@@ -54,7 +54,8 @@ Install R7 Suite: neXpose+Metasploit Pro+Nmap+604 NSE scripts: Vuln+Vulners+Vuls
 
 or
     
-## Install Nvidia (R) Video Cuda Drivers | https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html
+## Install Nvidia (R) Video Cuda Drivers 
+https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html
 
 #
 ## Install Intel i915 Drivers
