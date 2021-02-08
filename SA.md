@@ -45,7 +45,7 @@ Install R7 Suite: neXpose+Metasploit Pro+Nmap+604 NSE scripts: Vuln+Vulners+Vuls
     sudo pip install --no-cache-dir -U crcmod
 #    
 #       
-    sudo apt-get autoclean && sudo apt install -f && sudo apt install aptitude -y && sudo apt install neofetch -y && sudo apt -f install && sudo apt autoremove -y && apt-get clean cache && sudo apt update && sudo apt-get autoclean && apt-get clean cache && sudo apt update && sudo apt update -y && sudo apt full-upgrade -y --allow-downgrades && sudo dpkg --configure -a && sudo grub-mkconfig && cd && aptitude upgrade --full-resolver -y && neofetch
+    sudo apt-get autoclean && sudo apt install -f && sudo apt install aptitude -y && sudo apt install neofetch -y && sudo apt -f install && sudo apt autoremove -y && apt-get clean cache && sudo apt update && sudo apt-get autoclean && apt-get clean cache && sudo apt update && sudo apt update -y && sudo apt full-upgrade -y --allow-downgrades && sudo dpkg --configure -a && sudo grub-mkconfig && cd && aptitude upgrade --full-resolver -y && apt autoremove -y && neofetch
 # 
 #
 ## Install Nvidia Video Drivers
@@ -99,7 +99,7 @@ https://askubuntu.com/questions/501372/intel-graphis-card-not-updating-problem-w
     pip install --no-cache-dir -U crcmod
 #    
 #       
-    apt-get autoclean && apt install -f && apt install neofetch -y && apt -f install && sudo apt install aptitude -y. && apt autoremove -y && apt-get clean cache && apt update && apt-get autoclean && apt-get clean cache && apt update && apt update -y && apt full-upgrade -y --allow-downgrades &&  dpkg --configure -a && grub-mkconfig && cd && aptitude upgrade--full-resolver -y && neofetch
+    apt-get autoclean && apt install -f && apt install neofetch -y && apt -f install && sudo apt install aptitude -y. && apt autoremove -y && apt-get clean cache && apt update && apt-get autoclean && apt-get clean cache && apt update && apt update -y && apt full-upgrade -y --allow-downgrades &&  dpkg --configure -a && grub-mkconfig && cd && aptitude upgrade--full-resolver -y && apt autoremove -y && neofetch
 # 
 
 ## Set DNS
@@ -134,7 +134,7 @@ https://askubuntu.com/questions/501372/intel-graphis-card-not-updating-problem-w
     sudo pip install --no-cache-dir -U crcmod
 #    
 #       
-    sudo apt-get autoclean && sudo apt install -f && sudo apt install neofetch -y && sudo apt -f install && sudo apt install aptitude -y && sudo apt autoremove -y && apt-get clean cache && sudo apt update && sudo apt-get autoclean && apt-get clean cache && sudo apt update && sudo apt update -y && sudo apt full-upgrade -y --allow-downgrades && sudo dpkg --configure -a && sudo grub-mkconfig && cd && aptitude upgrade--full-resolver -y && neofetch
+    sudo apt-get autoclean && sudo apt install -f && sudo apt install neofetch -y && sudo apt -f install && sudo apt install aptitude -y && sudo apt autoremove -y && apt-get clean cache && sudo apt update && sudo apt-get autoclean && apt-get clean cache && sudo apt update && sudo apt update -y && sudo apt full-upgrade -y --allow-downgrades && sudo dpkg --configure -a && sudo grub-mkconfig && cd && aptitude upgrade--full-resolver -y && apt autoremove -y && neofetch
 #    
     sudo reboot
 #    
