@@ -183,7 +183,7 @@ This PoC include
    
     wget http://download2.rapid7.com/download/InsightVM/Rapid7Setup-Linux64.bin && chmod +x Rapid7Setup-Linux64.bin && ./Rapid7Setup-Linux64.bin
     
-     systemctl start nexposeconsole.service
+    systemctl start nexposeconsole.service
 
 For Windows:   
 
@@ -336,10 +336,10 @@ Configure the services and database of Metasploit Framework 6:
     
 Close terminal
    
-Open a new terminal as a normal user and verify that services are running and initiate the database of Metasploit Framework 5. 
+Open a new terminal as a normal user and verify that services are running and initiate the database of Metasploit Framework 6. 
   #   
     service --status-all
-    msfdb init
+    mkdir /root/.bundle && msfdb init
 
 #
  (for repair use "msfdb reinit")
