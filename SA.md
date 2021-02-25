@@ -34,7 +34,6 @@ Install R7 Suite: neXpose+Metasploit Pro+Nmap+604 NSE scripts: Vuln+Vulners+Vuls
 
 #
     apt-get autoclean && apt-get clean cache && apt update && aptitude install git screen neofetch synaptic lsb-release software-properties-common curl dirmngr apt-transport-https jq nginx onioncircuits youtube-dl hping3 hashcat openvpn chktex clisp dvidvi dvipng lacheck latexdiff latexmk libemf1 libffcall1b libplot2c2 libpstoedit0c2a ps2eps pstoedit purifyeps xindy xindy-rules fonts-ancient-scripts fonts-symbola libgtkglext1 libpangox-1.0-0 qml-module-qtgraphicaleffects qml-module-qtquick-controls qml-module-qtquick-dialogs qml-module-qtquick-layouts qml-module-qtquick-privatewidgets qml-module-qtquick-window2 qml-module-qtquick2 network-manager-openvpn-gnome gnome gdm3 gnome-tweaks gnome-tweak-tool gnome-dictionary synaptic build-essential linux-headers-`uname -r` dkms gcc gcc-multilib g++ g++-multilib cmake ghex snapd blender lm-sensors hddtemp fancontrol wine playonlinux calibre hexchat docker docker-compose docker.io wmdocker vagrant inkscape libsecret-1-0 libsecret-1-dev telegram-desktop gir1.2-gtop-2.0 gir1.2-nm-1.0 asciidoc xmlto docbook2x install-info dh-autoreconf libcurl4-gnutls-dev libexpat1-dev libz-dev libssl-dev wget npm nano git mercurial make pulseaudio libcanberra-pulse mpg123 libldap-2.4-2 libpulse0 libxml2 giflib-tools libc6 rar unrar p7zip p7zip-full p7zip-rar unace zip unzip bzip2 arj lhasa lzip ffmpegthumbnailer gstreamer1.0-plugins-base gstreamer1.0-nice gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-alsa gstreamer1.0-pulseaudio gstreamer1.0-libav gstreamer1.0-vaapi lsdvd libdvdnav4 compizconfig-settings-manager compiz-plugins-extra compiz gir1.2-nautilus-3.0 sshfs resolvconf nmap net-tools ssh gcc python-dev python-setuptools python-setuptools python-dev python3-pip libesedb-utils gparted gimp steghide httrack mesa-utils ethtool macchanger python2 python3 python3-gi postgresql gimp wireshark wireshark-gtk wireshark-doc ndiff zmap forensics-all forensics-all-gui forensics-extra-gui forensics-extra hydra-gtk -y && cd /usr/share && git clone https://github.com/s0md3v/Photon && cd /usr/share/Photon  && chmod +x *.* && neofetch && pwd && cd /usr/share && git clone https://github.com/aboul3la/Sublist3r.git && cd /usr/share/Sublist3r && chmod +x *.* && sudo apt update -y && sudo apt install aptitude -y && aptitude install python-pip python3-pip python-pip-whl python-all-dev python-wheel -y && pip install pysqlcipher3 && pip install psycopg2-binary && sudo apt update -y && sudo apt install aptitude -y && aptitude install python-pip python3-pip python-pip-whl python-all-dev python-wheel -y && pip install pysqlcipher3 && pip install psycopg2-binary && pip install ebcdic && pip install ebcdic && apt remove python3-pip && apt install python3-pip && pip3 install ebcdic && python setup.py install && apt install snapd && systemctl start snapd && systemctl enable snapd && systemctl start apparmor && systemctl enable apparmor && export PATH="$PATH:/snap/bin" && snap install go --classic && snap install snap-store && snap install slack --classic && snap install discord && snap install signal-desktop && snap install wire && snap install postman && snap install kubectl --classic && snap install mattermost-desktop && snap install whatsdesk && snap install google-cloud-sdk --classic && snap install heroku --classic && snap install aws-cli --classic && snap install john-the-ripper && snap install zaproxy --classic && snap install wireguard-ammp && snap install vectr && snap install zeronet && snap install spotify && snap refresh && cd /root && wget http://archive.ubuntu.com/ubuntu/pool/main/p/packagekit/libpackagekit-glib2-16_0.8.17-4ubuntu6~gcc5.4ubuntu1_amd64.deb && wget https://mirrors.edge.kernel.org/ubuntu/pool/universe/t/ttf-ancient-fonts/ttf-ancient-fonts_2.60-1_all.deb && wget https://dl.teamviewer.com/download/linux/version_15x/teamviewer_15.6.7_amd64.deb && wget https://repo.skype.com/latest/skypeforlinux-64.deb && dpkg -i *.deb && apt --fix-broken install -y && systemctl disable teamviewerd.service && neofetch && pwd && apt-get install aptitude -y && aptitude safe-upgrade -y && apt-get install --fix-broken && apt-get update --fix-missing && apt-get update && apt-get full-upgrade && apt-get autoremove -y && apt-get install apt-file -y && apt-get install -y && /etc/init.d/kmod start && sensors-detect && apt update -y && apt dist-upgrade -y && dpkg --configure -a && grub-mkconfig && cd && neofetch
-
     
 #    
     gem install lolcat nokogiri bundle rails racc
@@ -267,17 +266,15 @@ Open Web UI of Metasploit Pro https://localhost:3790/users/new
 
 # Initialize Metasploit Pro
 
-If you don't see the option to create a new user, execute: 
-    
+If you don't see the option to create a new user, execute:
+
     /opt/metasploit/ctlscript.sh start
 
+    /opt/metasploit/createuser
+    
     service metasploit status
+       
         
-     /opt/metasploit/diagnostic_shell
-    
-    cd /opt/metasploit/apps/pro/ui
-    
-    ruby script/createuser root
     
 
 Fow Windows:
