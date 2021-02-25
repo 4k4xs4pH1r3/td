@@ -319,13 +319,13 @@ Activate your license at
     systemctl disable metasploit
 
 
-# Configure Metasploit Framework 5 
+# Configure Metasploit Framework 6 
 
 (omnibus Nightly):
 
     apt install nmap nginx -y && curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && chmod 755 msfinstall && ./msfinstall
 
-Configure the services and database of Metasploit Framework 5:
+Configure the services and database of Metasploit Framework 6:
 
     su 
     update-rc.d postgresql enable && update-rc.d nginx enable && service postgresql start 
@@ -352,7 +352,7 @@ In Parrot Security:
 
     /usr/share/metasploit-framework/./msfconsole
     
-Update and Check Metasploit Framework 5:
+Update and Check Metasploit Framework 6:
 
     msfupdate
     db_status
