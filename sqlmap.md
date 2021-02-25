@@ -46,7 +46,7 @@ of each host that you are looking for (CSV format)
 Include: Target URL; Place; Parameter; Technique(s) and Note(s) at
 
        cd
-       cd .sqlmap/output/
+       cd /root/.sqlmap/output/
 
 #
 #
