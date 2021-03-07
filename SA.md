@@ -46,7 +46,7 @@ Add this repo
 deb http://ftp.debian.org/debian/ stretch main contrib non-free
 ```
 
-## Install Python
+## Install Python (Execute 2 times)
 
     sudo apt update -y && sudo apt install aptitude -y && aptitude install python-pip python3-pip python-pip-whl python-all-dev python-wheel -y && pip install pysqlcipher3 && pip install psycopg2-binary
     
