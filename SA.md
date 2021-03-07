@@ -34,7 +34,7 @@ Install R7 Suite: neXpose+Metasploit Pro+Nmap+604 NSE scripts: Vuln+Vulners+Vuls
     
     
     
-    ----------
+----------
 
 Edit APT Repo
 ----------
