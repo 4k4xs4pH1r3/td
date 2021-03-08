@@ -49,7 +49,7 @@ Install R7 Suite: neXpose+Metasploit Pro+Nmap+604 NSE scripts: Vuln+Vulners+Vuls
     pip install --no-cache-dir -U crcmod
 #    
 #       
-    apt-get autoclean &&  apt install -f &&  apt install aptitude -y &&  apt install neofetch -y &&  apt -f install &&  apt autoremove -y && apt-get clean cache &&  apt update &&  apt-get autoclean && apt-get clean cache &&  apt update &&  apt update -y &&  apt full-upgrade -y --allow-downgrades &&  dpkg --configure -a &&  grub-mkconfig && cd && aptitude upgrade --full-resolver -y && apt autoremove -y && neofetch
+    apt-get autoclean && apt install -f && apt install aptitude -y && apt install neofetch -y && apt -f install && apt autoremove -y && apt-get clean cache &&  apt update && apt-get autoclean && apt-get clean cache &&  apt update && apt update -y && apt full-upgrade -y --allow-downgrades &&  dpkg --configure -a &&  grub-mkconfig && cd && aptitude upgrade --full-resolver -y && apt autoremove -y && neofetch
 # 
 #
 ## Install Nvidia Video Drivers
