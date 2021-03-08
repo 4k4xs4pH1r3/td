@@ -44,8 +44,6 @@ Install R7 Suite: neXpose+Metasploit Pro+Nmap+604 NSE scripts: Vuln+Vulners+Vuls
 #    
     gem pristine diff-lcs domain_name erubis httpclient rack rake rest-client rubydns term-ansicolor thin thor tilt
 #
-    gem update --system
-#
     pip install --no-cache-dir -U crcmod
 #    
 #       
