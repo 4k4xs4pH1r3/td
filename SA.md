@@ -236,13 +236,13 @@ And replace the content of the file with this
 
 
 
-<Users>
-<User id="nxadmin" name="nxadmin" email="" salt="39be0f50a5914aaa" passwordHash="DA5EED971969E0A7C2685F6AE52147207607A340" enabled="1">
-<Roles>
-<role name="nexposeadmin"/>
-</Roles>
-</User>
-</Users>
+    <Users>
+    <User id="nxadmin" name="nxadmin" email="" salt="39be0f50a5914aaa" passwordHash="DA5EED971969E0A7C2685F6AE52147207607A340" enabled="1">
+    <Roles>
+    <role name="nexposeadmin"/>
+    </Roles>
+    </User>
+    </Users>
 
 
 No login again https://localhost:3780/ with "nxadmin" as username and password
@@ -273,7 +273,7 @@ Fow Windows:
  http://downloads.metasploit.com/data/releases/metasploit-latest-windows-installer.exe
 #
 
-Acquire Metasploit Pro License (Metasploit 4.17.0 - Update 2020012201)
+Acquire Metasploit Pro License
  
  https://www.rapid7.com/try/metasploit-pro/
  
@@ -282,17 +282,20 @@ Activate your license at
  https://localhost:1337/licenses 
 
 
+
+
+#
+
+# 4. Create and Save your PRO workspace
+
 # 
-    su
+    sudo -i
     msfpro
     db_status
     db_rebuild_cache
     load nexpose
     load nessus
-    exit
-#
-
-# 4. Create and Save your PRO workspace
+    save
 
     workspace -a sk
  
@@ -314,9 +317,9 @@ Activate your license at
 
 (omnibus Nightly):
 
- apt install aptitude -y && aptitude install nmap nginx -y && curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && chmod 755 msfinstall && ./msfinstall
+    apt install aptitude -y && aptitude install nmap nginx -y && curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && chmod 755 msfinstall && ./msfinstall
 
-Configure the services and database of Metasploit Framework 5:
+Configure the services and database of Metasploit Framework 6:
 
     su 
     update-rc.d postgresql enable && update-rc.d nginx enable && service postgresql start 
@@ -327,7 +330,7 @@ Configure the services and database of Metasploit Framework 5:
  
 Close terminal
  
-Open a new terminal as a normal user and verify that services are running and initiate the database of Metasploit Framework 5. 
+Open a new terminal as a normal user and verify that services are running and initiate the database of Metasploit Framework 6. 
  # 
     service --status-all
     msfdb init
@@ -336,6 +339,11 @@ Open a new terminal as a normal user and verify that services are running and in
  (for repair use "msfdb reinit")
 
 It's time to open Metasploit Framework 6 (Works in Kali Linux or Ubuntu)
+
+
+    msfconsole
+    
+    or
  
     /opt/metasploit-framework/bin/./msfconsole
 
@@ -343,7 +351,11 @@ In Parrot Security:
 
     /usr/share/metasploit-framework/./msfconsole
  
-Update and Check Metasploit Framework 5:
+
+
+
+
+# 5. Create and Save your workspace + Update and Check Metasploit Framework 6:
 
     msfupdate
     db_status
@@ -351,14 +363,7 @@ Update and Check Metasploit Framework 5:
     load nexpose
     load nessus
     save
-# 
-#
-#
-#
  
-
-# 5. Create and Save your workspace
-
     workspace -a sk
  
     setg Prompt x(%whi%H/%grn%U/%whi%L%grn%D/%whi%T/%grn%W/%whiS%S/%grnJ%J)
@@ -698,6 +703,7 @@ For monitoring, collect and reports in Metasploit Pro
 #
 [*] Available Framework plugins:
 
+    load -l
 
 #
 #
