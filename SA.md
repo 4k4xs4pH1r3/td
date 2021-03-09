@@ -357,7 +357,6 @@ In Parrot Security:
 
 # 5. Create and Save your workspace + Update and Check Metasploit Framework 6:
 
-    msfupdate
     db_status
     db_rebuild_cache
     load nexpose
@@ -761,6 +760,7 @@ For check connections
 #
 
 
+ 
  
  
  ҉҉҉҉҉҉҉҉҉҉҉҉҉҉҉҉҉҉҉҉҉҉Borned To Learn Something, dedicated to my C4N6 mentors, in honor to 0x00H4C|<£ and 
