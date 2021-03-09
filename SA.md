@@ -3,12 +3,12 @@
 to The CyberNinja passion of https://github.com/sh1nta & https://github.com/Daniels8989
 
 # rl++
- __________________
-< SA >
- ------------
-   \   ,__,
-    \  (oo)____
-       (__)    )\
+    __________________
+    < SA >
+    ------------
+    \   ,__,
+     \  (oo)____
+        (__)    )\
           ||--|| *
 
  
@@ -71,13 +71,13 @@ https://askubuntu.com/questions/501372/intel-graphis-card-not-updating-problem-w
 
     nano /etc/resolv.conf
 # 
- #P
- nameserver 139.99.96.146
- nameserver 37.59.40.15
- nameserver 185.121.177.177
+    #P
+    nameserver 139.99.96.146
+    nameserver 37.59.40.15
+    nameserver 185.121.177.177
 
- # Round Robin
- options rotate
+    # Round Robin
+    options rotate
 
 # 
     reboot
@@ -106,13 +106,13 @@ https://askubuntu.com/questions/501372/intel-graphis-card-not-updating-problem-w
 
     nano /etc/resolv.conf
 # 
- #P
- nameserver 139.99.96.146
- nameserver 37.59.40.15
- nameserver 185.121.177.177
+    #P
+    nameserver 139.99.96.146
+    nameserver 37.59.40.15
+    nameserver 185.121.177.177
 
- # Round Robin
- options rotate
+    # Round Robin
+    options rotate
 
 # 
     reboot
