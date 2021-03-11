@@ -262,7 +262,11 @@ Open Web UI of Metasploit Pro https://localhost:3790/users/new
 
 If you don't see the option to create a new user, execute: 
  
-    /opt/metasploit/ctlscript.sh start && service metasploit status && /opt/metasploit/createuser
+    /opt/metasploit/ctlscript.sh start
+    
+    service metasploit status 
+    
+    /opt/metasploit/createuser
  
 Fow Windows:
 
